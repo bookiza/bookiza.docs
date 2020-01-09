@@ -9,7 +9,7 @@ import image from '@images/header-img.png'
 
 const Wrapper = styled.div`
   width: 100%;
-  background-color: #8dd4ff;
+  background-color: #ff7f7f;
   background-position: center;
   border-bottom: 1px solid ${p => p.theme.colors.grayLight};
 
@@ -60,7 +60,7 @@ export const Hero = () => {
   return (
     <Wrapper>
       <Container>
-        <Logo height={200} style={{ maxWidth: '100%' }} />
+        <Logo height={300} style={{ maxWidth: '100%' }} />
         <Title>Bookiza Abelone</Title>
         <Subtitle><strong>Bookiza</strong> is a lightweight book reification framework for the web. </Subtitle>
         <GitHubButton
