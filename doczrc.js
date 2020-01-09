@@ -5,8 +5,8 @@ const PUBLIC = path.resolve(__dirname, 'public')
 const SRC = path.resolve(__dirname, 'src')
 
 export default {
-  title: 'Toucaan',
-  description: 'Style framework based on CSS Grids.',
+  title: 'Bookiza Abelone',
+  description: 'Book reification framework for the web.',
   indexHtml: 'public/index.html',
   theme: 'src/theme/index',
   typescript: true,
