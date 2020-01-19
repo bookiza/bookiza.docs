@@ -9,7 +9,7 @@ import image from '@images/header-img.png'
 
 const Wrapper = styled.div`
   width: 100%;
-  background-color: #ff7f7f;
+  background-color: #fff;
   background-position: center;
   border-bottom: 1px solid ${p => p.theme.colors.grayLight};
 
@@ -33,7 +33,7 @@ const Title = styled.h1`
   margin: 0;
   padding: 0;
   font-size: 8vh;
-  font-family: 'Fascinate', cursive;
+  font-family: "Crimson Text", serif;
   line-height: 1;
 `
 
@@ -60,7 +60,7 @@ export const Hero = () => {
   return (
     <Wrapper>
       <Container>
-        <Logo height={300} style={{ maxWidth: '100%' }} />
+        <Logo height={200} style={{ maxWidth: '100%' }} />
         <Title>Bookiza Abelone</Title>
         <Subtitle><strong>Bookiza</strong> is a lightweight book reification framework for the web. </Subtitle>
         <GitHubButton

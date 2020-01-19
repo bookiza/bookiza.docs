@@ -15,7 +15,7 @@ const Wrapper = styled.header`
   width: 100%;
   position: fixed;
   height: 60px;
-  background-image: linear-gradient(to right, #98fe92 0%, #fdff49 100%);
+  background-image: linear-gradient(to right,#fe92ad 0%, #f6ff66 100%);
 
   ${Container} {
     display: flex;
