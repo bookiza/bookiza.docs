@@ -16,7 +16,9 @@ const Wrapper = styled.header`
   width: 100%;
   position: fixed;
   height: 60px;
-  background-image: linear-gradient(to right,#fe92ad 0%, #f6ff66 100%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0px 10px 30px rgba(128, 102, 255, 0.2);
 
   ${Container} {
     display: flex;
@@ -30,9 +32,13 @@ const Wrapper = styled.header`
       })};
   }
 `
-
+const Accent = styled.div`
+  background: rgba(128, 102, 255, 1);
+  height: 0.25vmin;
+  border-bottom: 1px solid rgba(128, 102, 255, 0.5);
+`
 const LogoLink = styled(Link)`
-  height: 45px;
+  height: 50px;
 `
 
 const Menu = styled.div`
@@ -107,6 +113,8 @@ export const Topbar = () => {
 
   return (
     <Wrapper>
+      <Accent></Accent>
+
       <Container>
         <LogoLink to="/">
           <Logo height={50} small={!showFullMenu} />
