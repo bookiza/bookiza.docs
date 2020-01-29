@@ -6,7 +6,7 @@ const SRC = path.resolve(__dirname, 'src')
 
 export default {
   title: 'Bookiza Abelone',
-  description: 'Book reification framework for the web.',
+  description: 'The book reification framework for the web.',
   indexHtml: 'public/index.html',
   theme: 'src/theme/index',
   typescript: true,
