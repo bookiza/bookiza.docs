@@ -30,8 +30,8 @@ export default {
       ],
     },
     {
-      name: 'Customizing',
-      menu: ['Powered by Gatsby', 'Gatsby Theme', 'Creating your themes'],
+      name: 'License',
+      menu: ['Blue Oak Council', 'MIT'],
     },
     {
       name: 'References',

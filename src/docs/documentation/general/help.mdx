@@ -1,0 +1,45 @@
+---
+name: Help
+route: /docs/help
+parent: Documentation
+menu: General
+---
+
+# Help
+
+Help is available on console and via Github [issues](https://github.com/bookiza/bookiza.cli/issues/new).
+
+```bash
+$ bookiza --help
+```
+
+or
+
+```bash
+$ b --help            # bookiza is aliased to `b`
+```
+
+Bookiza comes with several built-in methods to let you manage your manuscript smartly. The keyword `bookiza` itself is aliased to the alphabet `b` on the keyboard to make it easy to call bookiza commands that are aliased further down as per the following vocabulary:
+
+> Example: `$ bookiza new MY-AWESOME-NEW-BOOK -l 12 -t text` can be shortened to `$ b n MY-AWESOME-NEW-BOOK -l 12 -t text`.
+
+
+Full vocabulary is hereasunder:
+
+  Command | *alias* | Arguments    | Options  | Description
+  --------|---------|--------------|----------|------------
+    new   | n       | projectName  | *numberOfLeafs*, *templateName*   |  New book (Setup project)
+    add   | a       | -            | *numberOfLeafs*   |  Add leaf(s) to the stack (End of book).
+    insert| i       | insertAt     | *numberOfLeafs*   |  Insert leaf(s) into the stack (In between book)
+    remove| r | - | *removeAt*            |  Remove page_at (Not leaf!) and append a blank one.
+    move  | m | - | *moveFrom*  *moveTo*  |  Move page_at {moveFrom} to a page_at {moveTo}.
+    clip | c | - | *numberOfLeafs*        |  Clip leaf(s) off the stack.
+    length| l | - | -                    |  Book length
+    publish| p | - | -                   |  Publish book
+    server| s | - | *portNumber*         |  Start server
+    status| - | - | -              |  Check status
+    push | - | -  | -                    |  Push changes
+    update|u | -  | -                   |  Update bookiza
+    register|z | - | *username*, *passkey*  |  Register bookiza
+    whoami| w | - | -           | WhoAmI registered as?
+    help | h | - | -            | help

@@ -5,7 +5,7 @@ import { Link as BaseLink } from 'docz'
 
 import { Container, Logo } from '@components/ui'
 import { btnStyle } from '@components/ui/Button'
-import image from '@images/header-img.png'
+// import image from '@images/header-img.png'
 
 const Wrapper = styled.div`
   width: 100%;
@@ -41,13 +41,6 @@ const Subtitle = styled.h2`
   font-weight: 300;
   text-align: center;
 `
-
-const Image = styled.img`
-  margin: 60px 0;
-  max-width: 100%;
-  width: 1024px;
-`
-
 const Buttons = styled.div`
   display: flex;
 `
@@ -62,14 +55,13 @@ export const Hero = () => {
       <Container>
         <Logo height={200} style={{ maxWidth: '100%' }} />
         <Title>Bookiza Abelone</Title>
-        <Subtitle><strong>Bookiza</strong> is a lightweight book reification framework for the web. </Subtitle>
+        <Subtitle>The <strong>book reification framework</strong> for the web. </Subtitle>
         <GitHubButton
           type="stargazers"
           size="large"
           namespace="bookiza"
           repo="bookiza.cli"
         />
-        <Image src={image} alt="Built-in components" />
         <Buttons>
           <Link scale="big" to="/docs/getting-started">
             Getting Started

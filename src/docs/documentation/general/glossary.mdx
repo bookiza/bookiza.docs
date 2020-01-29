@@ -1,0 +1,52 @@
+---
+name: Glossary
+route: /docs/glossary
+parent: Documentation
+menu: General
+---
+
+Bookiza comes with several built-in "book baking" methods.
+
+
+Here's a complete chain of commands:
+
+```bash
+$ bookiza new MY-AWESOME-NEW-COMICS -l 12 -t comics         # Creates new project for comics with 24 pages
+```
+```bash
+$ bookiza server                                            # Fire up the server, load book to localhost:4567
+```
+```bash
+$ bookiza insert 7 -l 4                                     # Insert 8 blank pages starting at page_no. 7
+```
+```bash
+$ bookiza add -l 4                                          # Appends 8 blank pages to the book
+```
+```bash
+$ bookiza remove 3                                          # Removes page_no 3 and moves its content to `trash/`
+```
+```bash
+$ bookiza move 30 4                                         # Moves page_no 30 to page_no 4
+```
+```bash
+$ bookiza length                                            # Returns current length of the book
+```
+```bash
+$ bookiza render                                            # Build manuscript
+```
+```bash
+$ bookiza register                                          # Connect Bookiza with Bubblin Client
+```
+
+
+
+Command       | Options
+------------- | ------------------------
+new           | [ Hyphenated-Project-Name, STRING ] [ No. of pages, Even-INT ]
+insert        | [ Insert_page_at, INT] [No. of pages, Even-INT ]
+add           | [ No. of pages, Even-INT ]
+remove        | [ Remove_page_at, INT ]
+move          | [ Move_page_at, INT1, INT2 ]
+length        | *None*
+render        | Precompile the pages
+server        | Start dev server
