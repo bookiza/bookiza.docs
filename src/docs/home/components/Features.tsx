@@ -84,18 +84,18 @@ export const Features = () => (
         <Info>
           <Title>Powerful CSS Grids</Title>
           <Text>
-            Unleash the power of CSS Grids on your web designs. 
+            Unleash the power of CSS Grids on your web designs.
             Create smart responsive layouts with zero boilerplate code.
           </Text>
         </Info>
-      </FeatureItem> 
+      </FeatureItem>
 
       <FeatureItem>
         <Image src={watch} />
         <Info>
           <Title>WatchOS support</Title>
           <Text>
-            Toucaan has been built ground up with support for Apple WatchOS 5.
+            Bookizahas been built ground up with support for Apple WatchOS 5.
             Design apps that scale from a 44mm wrist watch to a 120" hi-res projector.
           </Text>
         </Info>
@@ -105,7 +105,7 @@ export const Features = () => (
         <Info>
           <Title>Geometrical precision</Title>
           <Text>
-            Use a mathematically grounded <a href="https://bubblin.io/blog/baseline-css">baseline reset</a> that's both logical & light in weight. 
+            Use a mathematically grounded <a href="https://bubblin.io/blog/baseline-css">baseline reset</a> that's both logical & light in weight.
             Under 1.5kb zipped with 100% support!
           </Text>
         </Info>
@@ -126,7 +126,7 @@ export const Features = () => (
         <Info>
           <Title>Easy to customize</Title>
           <Text>
-            Toucaan is very easy to customize. Create your own theme or
+            Bookizais very easy to customize. Create your own theme or
             customize a readymade theme to make your app or website
             stand out.
           </Text>

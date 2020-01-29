@@ -32,7 +32,7 @@ const Title = styled.h1`
   margin: 0;
   padding: 0;
   font-size: 8vh;
-  font-family: "Crimson Text", serif;
+  font-family: 'Zilla Slab', serif;
   line-height: 1;
 `
 

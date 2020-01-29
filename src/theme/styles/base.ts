@@ -12,7 +12,8 @@ const selection = (color: string) => css`
 
 // tslint:disable
 export const BaseStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Inconsolata|Zilla+Slab:300,400,600|Crimson+Text&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Inconsolata|Zilla+Slab:300,400,600&display=swap');
+
 
   @font-face {
     font-family: 'FaktSoft';
@@ -54,6 +55,7 @@ export const BaseStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     font-family: 'FaktSoft', Helvetica, sans-serif;
     font-size: 18px;
     font-weight: 300;
