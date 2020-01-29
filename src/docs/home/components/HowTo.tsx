@@ -82,10 +82,12 @@ import { Button } from './'
 export const HowTo = () => (
   <Wrapper>
     <Container>
+      <Title>Prerequisites</Title>
+      <Text>node (>=8.11.3), gulp, shelljs, git-scm and a unixy-style shell or the terminal app.</Text>
       <Title>How to</Title>
-      <Text>Install Toucaan as a dependency</Text>
+      <Text>Install globally</Text>
       <Pre className="language-bash">
-        $ npm install toucaan 
+        $ npm i -g bookiza
       </Pre>
       <Text>
         Create an <code>.mdx</code> file anywhere in your project
