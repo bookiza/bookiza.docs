@@ -4,6 +4,7 @@ import { useWindowSize } from 'react-use'
 import Github from 'react-feather/dist/icons/github'
 import styled, { css } from 'styled-components'
 import { Link } from 'docz'
+import GitHubButton from 'react-github-button'
 
 import { Hamburguer } from '@components/shared/Sidebar/Hamburguer'
 import { Container, Logo } from '@components/ui'
@@ -110,6 +111,13 @@ export const Topbar = () => {
         <LogoLink to="/">
           <Logo height={50} small={!showFullMenu} />
         </LogoLink>
+        <GitHubButton
+          type="stargazers"
+          size="large"
+          namespace="bookiza"
+          repo="bookiza.cli"
+        />
+
         <Menu>
           {showFullMenu &&
             TOPBAR_LINKS.map(({ id, children, ...props }) => {

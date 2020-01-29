@@ -1,6 +1,5 @@
 import * as React from 'react'
 import styled from 'styled-components'
-import GitHubButton from 'react-github-button'
 import { Link as BaseLink } from 'docz'
 
 import { Container, Logo } from '@components/ui'
@@ -56,12 +55,6 @@ export const Hero = () => {
         <Logo height={200} style={{ maxWidth: '100%' }} />
         <Title>Bookiza Abelone</Title>
         <Subtitle>The <strong>book reification framework</strong> for the web. </Subtitle>
-        <GitHubButton
-          type="stargazers"
-          size="large"
-          namespace="bookiza"
-          repo="bookiza.cli"
-        />
         <Buttons>
           <Link scale="big" to="/docs/getting-started">
             Getting Started
