@@ -17,7 +17,7 @@ export const ADSStyleSheet = createGlobalStyle`
     padding: .7rem;
     border-radius: 4px;
     text-align: center;
-    box-shadow: 0 0 0 1px hsla(0, 0%, 0%, .1);
+    box-shadow: 0 0 0 1px ${p => p.theme.colors.grayLight};
     background-color: transparent;
     font-size: var(--font-size);
     line-height: 1.5;

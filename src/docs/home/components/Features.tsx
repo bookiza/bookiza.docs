@@ -3,12 +3,12 @@ import styled from 'styled-components'
 import { Link } from 'docz'
 
 import { Container } from '@components/ui'
-import dimsums from '@images/icons/dimsums.svg'
-import reusable from '@images/icons/reusable.svg'
+import shaka from '@images/icons/shaka.svg'
+import lightning from '@images/icons/lightning.svg'
 import settings from '@images/icons/settings.svg'
-import grid from '@images/icons/grid.svg'
-import watch from '@images/icons/watch.svg'
-import protractor from '@images/icons/protractor.svg'
+import quote from '@images/icons/quote.svg'
+import beer from '@images/icons/beer.svg'
+import version from '@images/icons/version.svg'
 
 const ListItems = styled.div`
   display: grid;
@@ -70,57 +70,57 @@ export const Features = () => (
   <Container>
     <ListItems>
       <FeatureItem>
-        <Image src={reusable} />
+        <Image src={lightning} />
         <Info>
-          <Title>Reusable to the core</Title>
+          <Title>Lightning fast</Title>
           <Text>
-            Enjoy a lightning fast development experience with benefits of <Link to="/docs/reusable-helpers">maximum reusability</Link>.
-            Separate critical CSS from everything else.
+            Develop your story quickly and reap the benefits of <Link to="/docs/pagination">stacked pagination</Link> on a Superbook.
+            Cut down your book making time by half and publish for everyone! 
           </Text>
         </Info>
       </FeatureItem>
       <FeatureItem>
-        <Image src={grid} />
+        <Image src={quote} />
         <Info>
-          <Title>Insane Formatting</Title>
+          <Title>Intrinsic Formatting</Title>
           <Text>
-            Unleash the power of CSS3 on your book.
-            Create smart responsive layouts or use existing templates with zero boilerplate code.
+            Unleash the power of [strong layouts]() on your book
+            to create smart books that scale intrinsically.
           </Text>
         </Info>
       </FeatureItem>
 
       <FeatureItem>
-        <Image src={watch} />
+        <Image src={beer} />
         <Info>
-          <Title>WatchOS Support</Title>
+          <Title>Seamless Collaboration</Title>
           <Text>
-            Bookiza has been built ground up with support for Apple WatchOS 5 and upwards.
-            Your readers can be anywhere!
+            Use Git to collaborate with your editor, illustrator and even developers
+            if you like. Maintain one solid repository for your entire manuscript.
           </Text>
         </Info>
       </FeatureItem>
       <FeatureItem>
-        <Image src={protractor} />
+        <Image src={version} />
         <Info>
-          <Title>Geometrical precision</Title>
+          <Title>Version Control</Title>
           <Text>
-            Use a mathematically grounded <a href="https://bubblin.io/blog/baseline-css">baseline reset</a> that's both logical & light in weight.
-            Under 1.5kb zipped with 100% support!
+            Bookiza uses git-scm internally to track changes.
+            Manage multiple editions and a live version of your book from one place.
           </Text>
         </Info>
       </FeatureItem>
 
-      {/* <FeatureItem>
-        <Image src={dimsums} />
+      <FeatureItem>
+        <Image src={shaka} />
         <Info>
-          <Title>Blockscoped Typography</Title>
+          <Title>Author happiness</Title>
           <Text>
-            Say hello to intrinsic design with blockscoped typography.
-            Scale with geometric precision and never worry about text overflows again!
+          Optimized for author happiness. Write your heart out, add a layout to your manuscript and pass on
+          the happiness to your readers.
           </Text>
         </Info>
-      </FeatureItem> */}
+      </FeatureItem>
       <FeatureItem>
         <Image src={settings} />
         <Info>
