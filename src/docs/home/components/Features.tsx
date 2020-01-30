@@ -82,10 +82,10 @@ export const Features = () => (
       <FeatureItem>
         <Image src={grid} />
         <Info>
-          <Title>Powerful CSS Grids</Title>
+          <Title>Insane Formatting</Title>
           <Text>
-            Unleash the power of CSS Grids on your web designs.
-            Create smart responsive layouts with zero boilerplate code.
+            Unleash the power of CSS3 on your book.
+            Create smart responsive layouts or use existing templates with zero boilerplate code.
           </Text>
         </Info>
       </FeatureItem>
@@ -93,10 +93,10 @@ export const Features = () => (
       <FeatureItem>
         <Image src={watch} />
         <Info>
-          <Title>WatchOS support</Title>
+          <Title>WatchOS Support</Title>
           <Text>
-            Bookizahas been built ground up with support for Apple WatchOS 5.
-            Design apps that scale from a 44mm wrist watch to a 120" hi-res projector.
+            Bookiza has been built ground up with support for Apple WatchOS 5 and upwards.
+            Your readers can be anywhere!
           </Text>
         </Info>
       </FeatureItem>
@@ -111,7 +111,7 @@ export const Features = () => (
         </Info>
       </FeatureItem>
 
-      <FeatureItem>
+      {/* <FeatureItem>
         <Image src={dimsums} />
         <Info>
           <Title>Blockscoped Typography</Title>
@@ -120,7 +120,7 @@ export const Features = () => (
             Scale with geometric precision and never worry about text overflows again!
           </Text>
         </Info>
-      </FeatureItem>
+      </FeatureItem> */}
       <FeatureItem>
         <Image src={settings} />
         <Info>

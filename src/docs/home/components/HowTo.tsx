@@ -47,7 +47,7 @@ const Pre = styled(BasePre)`
   width: 100%;
   max-width: 650px;
   margin: 10px 0 20px 0;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid ${p => p.theme.colors.grayLight};
 
   ${p =>
     p.theme.mq({
@@ -84,8 +84,8 @@ export const HowTo = () => (
     <Container>
       <Title>Prerequisites</Title>
       <Text>node (>=8.11.3), gulp, shelljs, git-scm and a unixy-style shell or the terminal app.</Text>
-      <Title>How to</Title>
-      <Text>Install globally</Text>
+      <Title>Installation</Title>
+      <Text>It is recommended to install the Bookiza CLI globally</Text>
       <Pre className="language-bash">
         $ npm i -g bookiza
       </Pre>

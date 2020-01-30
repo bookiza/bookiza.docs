@@ -6,3 +6,59 @@ menu: General
 ---
 
 # Getting Started
+
+Prerequisites:
+
+> node (>=8.11.3), gulp, shelljs, git-scm and a unixy-style shell or the terminal app.
+
+To install:
+
+```bash
+$ npm i -g bookiza
+```
+Check installation with:
+
+```bash
+$ bookiza --version
+```
+
+Next, register client with:
+
+```bash
+$ bookiza register
+```
+
+It will ask for your Bubblin credentials and connect Bookiza to its sweet POST/PATCH API. You're all set now… 😇
+
+To start a new project My-Awesome-Comics :
+
+```bash
+$ bookiza new My-Awesome-Comics --leafs 12 --template comics
+```
+
+Creates a new project with 12 fresh leafs (24 pages) inside manuscript/ folder along with a layout template for comics. Boom!
+
+
+`cd` into My-Awesome-Comics , and then:
+
+```bash
+$ bookiza server
+```
+
+It will 🔥 up your manuscript at https://localhost:4567 and watch for the changes you make!
+
+Open project on your favorite editor (Sublime / Atom), write away. Once the book is ready, hit:
+
+```bash
+$ bookiza publish
+```
+
+Boom!, and now your book is live on web.
+
+Complete vocabulary is available with:
+
+```bash
+$ bookiza --help
+```
+
+Or read documentation at https://bubblin.io/bookiza/docs/
