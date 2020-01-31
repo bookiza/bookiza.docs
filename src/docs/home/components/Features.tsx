@@ -6,7 +6,7 @@ import { Container } from '@components/ui'
 import shaka from '@images/icons/shaka.svg'
 import lightning from '@images/icons/lightning.svg'
 import settings from '@images/icons/settings.svg'
-import quote from '@images/icons/quote.svg'
+import font from '@images/icons/font.svg'
 import beer from '@images/icons/beer.svg'
 import version from '@images/icons/version.svg'
 
@@ -72,38 +72,37 @@ export const Features = () => (
       <FeatureItem>
         <Image src={lightning} />
         <Info>
-          <Title>Lightning fast</Title>
+          <Title>Superbook format</Title>
           <Text>
-            Develop your story quickly and reap the benefits of <Link to="/docs/pagination">stacked pagination</Link> on a Superbook.
-            Cut down your book making time by half and publish for everyone! 
+            Rapid story development using the <a href="https://bubblin.io/docs/format">native book format</a> for the web.
+            Cut down your book outing time by half and distribute to everyone!
           </Text>
         </Info>
       </FeatureItem>
-      <FeatureItem>
-        <Image src={quote} />
-        <Info>
-          <Title>Intrinsic Formatting</Title>
-          <Text>
-            Unleash the power of [strong layouts]() on your book
-            to create smart books that scale intrinsically.
-          </Text>
-        </Info>
-      </FeatureItem>
-
       <FeatureItem>
         <Image src={beer} />
         <Info>
-          <Title>Seamless Collaboration</Title>
+          <Title>Git collaborative </Title>
           <Text>
-            Use Git to collaborate with your editor, illustrator and even developers
-            if you like. Maintain one solid repository for your entire manuscript.
+            Use the full power of GIT-SCM to collaborate with editors, illustrators and even developers
+            if you like. Maintain manuscript like a champion.
+          </Text>
+        </Info>
+      </FeatureItem>
+      <FeatureItem>
+        <Image src={font} />
+        <Info>
+          <Title>Strong layouts</Title>
+          <Text>
+            Unleash the power of [strong layouts]() on your book
+            to create smart books that scale intrinsically. Intrinsic Formatting
           </Text>
         </Info>
       </FeatureItem>
       <FeatureItem>
         <Image src={version} />
         <Info>
-          <Title>Version Control</Title>
+          <Title>Version control</Title>
           <Text>
             Bookiza uses git-scm internally to track changes.
             Manage multiple editions and a live version of your book from one place.
@@ -124,11 +123,10 @@ export const Features = () => (
       <FeatureItem>
         <Image src={settings} />
         <Info>
-          <Title>Easy to customize</Title>
+          <Title>Flavorful Customizations</Title>
           <Text>
-            Bookizais very easy to customize. Create your own theme or
-            customize a readymade theme to make your app or website
-            stand out.
+            Bookiza is very easy to customize. Create your own themes or
+            layouts or use a readymade one to make your book stand out.
           </Text>
         </Info>
       </FeatureItem>

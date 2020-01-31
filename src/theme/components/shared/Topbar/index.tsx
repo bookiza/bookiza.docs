@@ -96,13 +96,8 @@ export const TOPBAR_LINKS: MenuListItem[] = [
   },
   {
     id: 3,
-    children: 'Starters',
-    to: '/starters',
-  },
-  {
-    id: 4,
-    children: 'Templates',
-    to: '/templates',
+    children: 'Layouts',
+    to: '/layouts',
   }
 ]
 
@@ -136,6 +131,15 @@ export const Topbar = () => {
                 </Component>
               )
             })}
+          <IconLink
+            as="a"
+            rel="nofollow"
+            href="https://github.com/marvindanig?tab=repositories"
+            target="_blank"
+          >
+            Starters
+          </IconLink>
+
           <IconLink
             as="a"
             href="https://bubblin.io/blog/category/bookiza"
