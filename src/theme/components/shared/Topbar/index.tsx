@@ -147,13 +147,13 @@ export const Topbar = () => {
           >
             Blog
           </IconLink>
-          <IconLink
+          {/* <IconLink
             as="a"
             href="https://github.com/bookiza/toucaan"
             target="_blank"
           >
             <Github width={30} />
-          </IconLink>
+          </IconLink> */}
           {!showFullMenu && (
             <Hamburguer
               opened={showing}

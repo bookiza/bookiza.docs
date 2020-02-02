@@ -11,6 +11,8 @@ Prerequisites:
 
 > node (>=8.11.3), gulp, shelljs, git-scm and a unixy-style shell or the terminal app.
 
+## Installation
+
 To install:
 
 ```bash
@@ -22,38 +24,47 @@ Check installation with:
 $ bookiza --version
 ```
 
-Next, register client with:
+## Register
+
+Next, register Bookiza client with:
+
 
 ```bash
 $ bookiza register
 ```
 
-It will ask for your Bubblin credentials and connect Bookiza to its sweet POST/PATCH API. You're all set now… 😇
+Provide your [Bubblin](https://bubblin.io) credentials to connect Bookiza client to manuscript POST/PATCH API. Sweet!, you're all set now… 😇
 
-To start a new project My-Awesome-New-Book :
+## New Project
+
+To start a new project `my-awesome-new-book`:
 
 ```bash
-$ bookiza new My-Awesome-New-Book --leafs 12 --template novella
+$ bookiza new my-awesome-new-book --leafs 12 --template novella
 ```
 
-Creates a new project with 12 fresh leafs (24 pages) inside manuscript/ folder along with a layout template for comics. Boom!
+Bookiza will set-up a new project with 12 fresh leafs (24 pages) 
+and apply the `novella` layout on the book. Boom! 
 
-
-`cd` into My-Awesome-Comics , and then:
+`cd` into `my-awesome-new-book`, and start the development server with:
 
 ```bash
 $ bookiza server
 ```
+Open the project on your favorite editor (Visual Studio / Sublime / Atom), write away.
+Watch changes to your manuscript at https://localhost:4567 as you develop your story!
 
-It will 🔥 up your manuscript at https://localhost:4567 and watch for the changes you make!
+## Publishing and Updates
 
-Open project on your favorite editor (Sublime / Atom), write away. Once the book is ready, hit:
+Once the tome is ready, hit:
 
 ```bash
 $ bookiza publish
 ```
 
-Boom!, and now your book is live on web.
+Boom!, your book is live.
+
+## CLI Glossary
 
 Complete vocabulary is available with:
 
@@ -61,4 +72,4 @@ Complete vocabulary is available with:
 $ bookiza --help
 ```
 
-Or read documentation at https://bubblin.io/bookiza/docs/
+View the project structure at https://bookiza.io/docs/structure.
