@@ -20,9 +20,9 @@ const Wrapper = styled.div`
     color: white;
 
     ${p =>
-      p.theme.mq({
-        padding: ['50px 10px', '50px 20px'],
-      })};
+    p.theme.mq({
+      padding: ['50px 10px', '50px 20px'],
+    })};
   }
 `
 
@@ -59,24 +59,60 @@ const Link = styled(BaseLink)`
   ${btnStyle};
 `
 
-const mdxExample = `---
-name: Button
-route: /
----
-
-import { Playground, Props } from 'docz'
-import { Button } from './'
-
-# Button
-
-<Props of={Button} />
-
-## Basic usage
-
-<Playground>
-  <Button>Click me</Button>
-  <Button kind="secondary">Click me</Button>
-</Playground>
+const mdxExample = `my-awesome-new-book $ ls -ltra
+├── README.md
+├── assets
+│   ├── css/
+│   ├── images/
+│   │   ├── illustration-1.jpg
+│   │   └── illustration-2.jpg
+│   └── javascript/
+├── cover
+│   ├── front.jpg
+│   └── banner.jpg
+├── license.md
+├── crust/
+├── node_modules/
+├── manuscript
+│   ├── page-1
+│   │   ├── body.html
+│   │   └── style.css
+│   ├── page-2
+│   │   ├── body.html
+│   │   └── style.css
+│   ├── page-3
+│   │   ├── body.html
+│   │   └── style.css
+│   ├── page-4
+│   │   ├── body.html
+│   │   └── style.css
+│   ├── page-5
+│   │   ├── body.html
+│   │   ├── head.html
+│   │   ├── script.js
+│   │   └── style.css
+│   ├── page-6
+│   │   ├── body.html
+│   │   └── style.css
+│   │   …
+│   │   …
+│   └── page-2N
+│       ├── body.html
+│       └── style.css
+├── templates
+│   ├── head.html
+│   ├── style.css
+│   ├── body.html
+│   └── script.js
+└── trash
+│   ├── page-8-17:10:20
+│   └── page-12-17:11:17
+├── gulpfile.js
+├── index.html
+├── templates
+├── package.json
+├── package-lock.json
+└── .bookrc
 `
 
 export const HowTo = () => (
@@ -93,11 +129,11 @@ export const HowTo = () => (
         Check installation with:
       </Text>
       <Pre className="language-bash">
-      $ bookiza --version
+        $ bookiza --version
       </Pre>
       <Title>Registratation</Title>
       <Text>
-      Next, register client with:
+        Next, register client with:
       </Text>
       <Pre className="language-bash">
         $ bookiza register
@@ -110,34 +146,34 @@ export const HowTo = () => (
       </Text>
       <Title> New Project </Title>
       <Text>
-      To start a new project `My-Awesome-New-Book`:
+        To start a new project <code>my-awesome-new-book</code>:
       </Text>
       <Pre className="language-bash">
-        $ bookiza new My-Awesome-New-Book --leafs 12 --template novella
+        $ bookiza new my-awesome-new-book --leafs 12 --template novella
       </Pre>
       <Text>
         Bookiza will create a new project with 12 fresh leafs (24 pages) and apply the `novella` layout on it. Boom!
       </Text>
       <Text>
-        <code>cd</code> into My-Awesome-New-Book folder, and start the server:
+        `cd` into <code>my-awesome-new-book</code> folder, and start dev server with:
       </Text>
 
       <Pre className="language-bash">
         $ bookiza server
       </Pre>
       <Text>
-        Watch changes on your manuscript at <code>https://localhost:4567</code>.
+        Watch changes on your manuscript at <code>localhost:4567</code>.
       </Text>
-Open project on your favorite editor (Sublime / Atom), write away. Once the book is ready, hit:
-
-```bash
-$ bookiza publish
-```
-
+      <Text>
+        Open the project on your favorite editor (Visual Studio / Sublime / Atom), make your book happen!
+      </Text>
+      <Text>
+        Once the tome is ready, hit:</Text>
+      <Pre className="language-bash">$ bookiza publish</Pre>
+      <Link to="/docs/getting-started">More info</Link>
+      <Title>Project Structure:</Title>
       <Pre className="language-markdown">{mdxExample}</Pre>
-      <Text>That's it, your docs are ready to go !</Text>
-      <Pre className="language-bash">$ yarn docz dev</Pre>
-      <Link to="/docs/getting-started">More Info</Link>
+
     </Container>
   </Wrapper>
 )
