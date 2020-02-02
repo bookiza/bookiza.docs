@@ -7,7 +7,7 @@ export const main = '#2D2A32'
 export const primary = ocean
 export const white = '#FFFFFF'
 export const grayExtraLight = '#EFF2F7'
-export const grayLight = 'rgba(127, 102, 255, 0.5)'
+export const grayLight = 'rgba(127, 102, 255, 0.8)'
 export const gray = '#BEC6CB'
 export const grayDark = '#8492A6'
 

@@ -10,6 +10,7 @@ const Wrapper = styled.div`
   text-align: center;
   background: url(${pattern});
   color: ${p => p.theme.colors.grayLight};
+  border-top: 1pt solid ${p => p.theme.colors.grayLight};
 
 
   ${Container} {

@@ -94,15 +94,15 @@ export const Features = () => (
         <Info>
           <Title>Strong layouts</Title>
           <Text>
-            Unleash the power of [strong layouts]() on your book
-            to create smart books that scale intrinsically. Intrinsic Formatting
+            Publish smart responsive books that scale intrinsically using <a href="">strong layouts</a>.
+            Use readymade layouts or create one to make your book stand out.
           </Text>
         </Info>
       </FeatureItem>
       <FeatureItem>
         <Image src={version} />
         <Info>
-          <Title>Version control</Title>
+          <Title>Version control editions</Title>
           <Text>
             Bookiza uses git-scm internally to track changes.
             Manage multiple editions and a live version of your book from one place.
@@ -123,10 +123,10 @@ export const Features = () => (
       <FeatureItem>
         <Image src={settings} />
         <Info>
-          <Title>Flavorful Customizations</Title>
+          <Title>Flavorful processes</Title>
           <Text>
-            Bookiza is very easy to customize. Create your own themes or
-            layouts or use a readymade one to make your book stand out.
+            Bookiza is super customizable. Jot down your book using markdown,
+            haml, scss, less and simply convert to plain superbook-compatible HTML.
           </Text>
         </Info>
       </FeatureItem>
