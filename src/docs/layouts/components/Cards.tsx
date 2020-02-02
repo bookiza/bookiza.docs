@@ -13,18 +13,25 @@ const Wrapper = styled.div`
 
 const Card = styled(BaseCard)`
   ${mq({
-    width: ['100%', 'calc(50% - 20px)', 'calc(33% - 20px)', 'calc(33% - 20px)'],
-    margin: ['10px 0', '10px', '10px', '10px'],
-  })};
+  width: ['100%', 'calc(50% - 20px)', 'calc(33% - 20px)', 'calc(33% - 20px)'],
+  margin: ['10px 0', '10px', '10px', '10px'],
+})};
 `
 
 export const Cards: SFC = () => (
   <Wrapper>
     <Card
       image="https://cdn-std.dprcdn.net/files/acc_649651/TkJQcV"
-      name="toucaan-theme-starter"
-      description="Default theme created by Toucaan"
-      link="https://github.com/bookiza/toucaan.docs.git"
+      name="bookiza-novel-starter"
+      description="Novel layout without illustrations."
+      link="https://github.com/bookiza/templates/tree/master/novels/novellahttps://github.com/bookiza/templates/tree/master/novels/novella"
     />
+    <Card
+      image="https://cdn-std.dprcdn.net/files/acc_649651/TkJQcV"
+      name="bookiza-photobook-starter"
+      description="Responsive photobook with captions."
+      link="https://github.com/bookiza/templates/tree/master/novels/novellahttps://github.com/bookiza/templates/tree/master/novels/novella"
+    />
+
   </Wrapper>
 )

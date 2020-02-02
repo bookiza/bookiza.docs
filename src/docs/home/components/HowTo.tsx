@@ -7,15 +7,17 @@ import { Container, Pre as BasePre } from '@components/ui'
 import pattern from '@images/dark-pattern2.png'
 
 const Wrapper = styled.div`
+  text-align: center;
   background: url(${pattern});
   color: ${p => p.theme.colors.grayLight};
-  text-align: center;
+
 
   ${Container} {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0;
+    color: white;
 
     ${p =>
       p.theme.mq({
@@ -29,7 +31,6 @@ const Title = styled.h2`
   font-family: 'Zilla Slab';
   font-size: 52px;
   font-weight: 600;
-  color: white;
 
   ${p =>
     p.theme.mq({
@@ -40,7 +41,6 @@ const Title = styled.h2`
 
 const Text = styled.p`
   font-size: 20px;
-  color: white;
 `
 
 const Pre = styled(BasePre)`
@@ -90,8 +90,50 @@ export const HowTo = () => (
         $ npm i -g bookiza
       </Pre>
       <Text>
-        Create an <code>.mdx</code> file anywhere in your project
+        Check installation with:
       </Text>
+      <Pre className="language-bash">
+      $ bookiza --version
+      </Pre>
+      <Title>Registratation</Title>
+      <Text>
+      Next, register client with:
+      </Text>
+      <Pre className="language-bash">
+        $ bookiza register
+      </Pre>
+      <Text>
+        Provide your <a href="https://bubblin.io">Bubblin</a> credentials and connect Bookiza client to its POST/PATCH API.
+      </Text>
+      <Text>
+        Sweet! You're all set now… 😇
+      </Text>
+      <Title> New Project </Title>
+      <Text>
+      To start a new project `My-Awesome-New-Book`:
+      </Text>
+      <Pre className="language-bash">
+        $ bookiza new My-Awesome-New-Book --leafs 12 --template novella
+      </Pre>
+      <Text>
+        Bookiza will create a new project with 12 fresh leafs (24 pages) and apply the `novella` layout on it. Boom!
+      </Text>
+      <Text>
+        <code>cd</code> into My-Awesome-New-Book folder, and start the server:
+      </Text>
+
+      <Pre className="language-bash">
+        $ bookiza server
+      </Pre>
+      <Text>
+        Watch changes on your manuscript at <code>https://localhost:4567</code>.
+      </Text>
+Open project on your favorite editor (Sublime / Atom), write away. Once the book is ready, hit:
+
+```bash
+$ bookiza publish
+```
+
       <Pre className="language-markdown">{mdxExample}</Pre>
       <Text>That's it, your docs are ready to go !</Text>
       <Pre className="language-bash">$ yarn docz dev</Pre>

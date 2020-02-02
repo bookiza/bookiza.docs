@@ -75,7 +75,7 @@ export const Features = () => (
           <Title>Superbook format</Title>
           <Text>
             Rapid story development using the <a href="https://bubblin.io/docs/format">native book format</a> for the web.
-            Cut down your book outing time by half and distribute to everyone!
+            Cut down your publishing time by half. Distribute once and to everyone!
           </Text>
         </Info>
       </FeatureItem>
@@ -85,7 +85,7 @@ export const Features = () => (
           <Title>Git collaborative </Title>
           <Text>
             Use the full power of GIT-SCM to collaborate with editors, illustrators and even developers
-            if you like. Maintain manuscript like a champion.
+            if you like. Maintain a manuscript like a champion.
           </Text>
         </Info>
       </FeatureItem>

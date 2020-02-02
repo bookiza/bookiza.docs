@@ -115,4 +115,7 @@ export const BaseStyle = createGlobalStyle`
   pre, code {
     font-family: 'Inconsolata', monospace;
   }
+  @supports (-moz-appearance:none) {
+    header { background-color: rgba(255, 255, 255, 0.6); }
+  }
 `

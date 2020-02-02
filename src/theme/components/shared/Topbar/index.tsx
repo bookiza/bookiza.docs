@@ -39,6 +39,7 @@ const Accent = styled.div`
 `
 const LogoLink = styled(Link)`
   height: 50px;
+  margin: 0 1vmin;
 `
 
 const Menu = styled.div`
@@ -120,7 +121,6 @@ export const Topbar = () => {
           namespace="bookiza"
           repo="bookiza.cli"
         />
-
         <Menu>
           {showFullMenu &&
             TOPBAR_LINKS.map(({ id, children, ...props }) => {
