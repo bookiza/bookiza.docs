@@ -24,13 +24,13 @@ export const Cards: SFC = () => (
       image="https://cdn-std.dprcdn.net/files/acc_649651/TkJQcV"
       name="bookiza-novel-starter"
       description="Novel layout without illustrations."
-      link="https://github.com/bookiza/templates/tree/master/novels/novellahttps://github.com/bookiza/templates/tree/master/novels/novella"
+      link="https://github.com/bookiza/templates/tree/master/novels/novella"
     />
     <Card
       image="https://cdn-std.dprcdn.net/files/acc_649651/TkJQcV"
       name="bookiza-photobook-starter"
       description="Responsive photobook with captions."
-      link="https://github.com/bookiza/templates/tree/master/novels/novellahttps://github.com/bookiza/templates/tree/master/novels/novella"
+      link="https://github.com/bookiza/templates/tree/master/comics/artwork"
     />
 
   </Wrapper>
