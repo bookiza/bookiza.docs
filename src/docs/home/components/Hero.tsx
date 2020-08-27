@@ -54,7 +54,7 @@ export const Hero = () => {
   return (
     <Wrapper>
       <Container>
-        <Logo height={300} style={{ maxWidth: '100%' }} />
+        <Logo height={200} style={{ maxWidth: '100%' }} />
         <Title>Bookiza Abelone</Title>
         <Subtitle>The <strong>book reification framework</strong> for the web. </Subtitle>
         <Buttons>
