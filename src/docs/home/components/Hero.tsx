@@ -4,11 +4,13 @@ import { Link as BaseLink } from 'docz'
 
 import { Container, Logo } from '@components/ui'
 import { btnStyle } from '@components/ui/Button'
+
 // import image from '@images/header-img.png'
 
 const Wrapper = styled.div`
   width: 100%;
   background-color: #ffeefe;
+  background-image: radial-gradient(circle, #ffffff, #fdfbff, #fcf7ff, #fdf3ff, #ffeefe);
   background-position: center;
   border-bottom: 1px solid ${p => p.theme.colors.grayLight};
 

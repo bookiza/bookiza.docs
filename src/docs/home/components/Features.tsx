@@ -74,8 +74,8 @@ export const Features = () => (
         <Info>
           <Title>Superbook format</Title>
           <Text>
-            Rapid story development using the <a href="https://bubblin.io/docs/format">native book format</a> for the web.
-            Cut down your publishing time by half. Distribute once and to everyone!
+            Make native books on the web using the <a href="https://bubblin.io/docs/format">Superbook format</a>. 
+            Cut down your publishing time to zero and distribute for free in the open!
           </Text>
         </Info>
       </FeatureItem>
