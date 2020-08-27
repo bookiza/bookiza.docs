@@ -8,7 +8,7 @@ import { btnStyle } from '@components/ui/Button'
 
 const Wrapper = styled.div`
   width: 100%;
-  background-color: #ffdd8c;
+  background-color: #ffeefe;
   background-position: center;
   border-bottom: 1px solid ${p => p.theme.colors.grayLight};
 
@@ -52,7 +52,7 @@ export const Hero = () => {
   return (
     <Wrapper>
       <Container>
-        <Logo height={200} style={{ maxWidth: '100%' }} />
+        <Logo height={300} style={{ maxWidth: '100%' }} />
         <Title>Bookiza Abelone</Title>
         <Subtitle>The <strong>book reification framework</strong> for the web. </Subtitle>
         <Buttons>

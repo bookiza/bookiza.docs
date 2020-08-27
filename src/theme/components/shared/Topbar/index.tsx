@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { useContext } from 'react'
 import { useWindowSize } from 'react-use'
-import Github from 'react-feather/dist/icons/github'
+// import Github from 'react-feather/dist/icons/github'
 import styled, { css } from 'styled-components'
 import { Link } from 'docz'
 import GitHubButton from 'react-github-button'
@@ -32,15 +32,16 @@ const Wrapper = styled.header`
       })};
   }
 `
+
 const Accent = styled.div`
   background: rgba(128, 102, 255, 1);
   height: 0.25vmin;
   border-bottom: 1px solid rgba(128, 102, 255, 0.5);
 `
-const LogoLink = styled(Link)`
-  height: 50px;
-  margin: 0 1vmin;
-`
+// const LogoLink = styled(Link)`
+//   height: 50px;
+//   margin: 0 1vmin;
+// `
 
 const Menu = styled.div`
   display: flex;
@@ -112,9 +113,9 @@ export const Topbar = () => {
       <Accent></Accent>
 
       <Container>
-        <LogoLink to="/">
+        {/* <LogoLink to="/">
           <Logo height={50} small={!showFullMenu} />
-        </LogoLink>
+        </LogoLink> */}
         <GitHubButton
           type="stargazers"
           size="large"
